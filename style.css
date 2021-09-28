@@ -1,0 +1,62 @@
+:root {
+  --primary-background-color: #000;
+  --primary-text-color: #fff;
+  --nav-background-color: #04a779;
+  --nav-link-color: #000;
+  --body-columns: 1fr;
+  --body-direction: "about" "assignments";
+}
+@media (min-width:800px) {
+  :root {
+    --body-columns: 2fr 1fr;
+    --body-direction: "assignments about";
+  }
+}
+html {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  font-family: monospace;
+}
+header {
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+nav {
+  background-color: var(--nav-background-color);
+  width: 100%;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--nav-link-color)
+}
+#body {
+  display: grid;
+  grid-template-columns: var(--body-columns);
+  grid-template-areas: var(--body-direction);
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#about {
+  grid-area:about;
+}
+#assignments {
+  grid-area:assignments;
+}
+footer {
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+}
