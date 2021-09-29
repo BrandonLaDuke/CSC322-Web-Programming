@@ -6,7 +6,7 @@
   --body-columns: 1fr;
   --body-direction: "about" "assignments";
 }
-@media (min-width:800px) {
+@media screen and (min-width:800px) {
   :root {
     --body-columns: 2fr 1fr;
     --body-direction: "assignments about";
@@ -42,6 +42,14 @@ nav ul li a {
   text-decoration: none;
   color: var(--nav-link-color)
 }
+header h1 {
+  margin-bottom: 0;
+  font-size: clamp(2.75rem, 5vw, 6rem);
+}
+header h2 {
+  margin-top: 0;
+  font-size: clamp(1rem, 1.4vw, 1.8rem);
+}
 #body {
   display: grid;
   grid-template-columns: var(--body-columns);
@@ -59,4 +67,5 @@ nav ul li a {
 footer {
   background-color: var(--nav-background-color);
   color: var(--nav-link-color);
+  padding: 1rem;
 }
