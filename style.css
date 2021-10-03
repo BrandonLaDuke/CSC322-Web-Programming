@@ -6,10 +6,17 @@
   --body-columns: 1fr;
   --body-direction: "about" "assignments";
 }
+#preview {
+  display: none;
+}
 @media screen and (min-width:800px) {
   :root {
-    --body-columns: 2fr 1fr;
-    --body-direction: "assignments about";
+    --body-columns: 1fr 2fr;
+    --body-direction: "about about"
+                      "assignments preview";
+  }
+  #preview {
+    display: block;
   }
 }
 html {
@@ -55,7 +62,7 @@ header h2 {
   grid-template-columns: var(--body-columns);
   grid-template-areas: var(--body-direction);
   gap: 1rem;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 #about {
@@ -63,7 +70,22 @@ header h2 {
 }
 #assignments {
   grid-area:assignments;
+  font-size: 1.1rem;
 }
+#assignments a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+#assignments a:hover {
+  color: lightgreen;
+}
+#preview {
+  grid-area: preview;
+}
+#preview > * {
+  display: none; /* Working on a way to have previews. WIP. */
+}
+
 footer {
   background-color: var(--nav-background-color);
   color: var(--nav-link-color);

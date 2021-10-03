@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Light Bulb Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="order.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <section id="linkBack">
+      <a href="http://sullivan.brandonladuke.net/csc322/index.html">See other projects I've done in CSC322 Web Programming -></a>
+    </section>
+    <header>
+      <h1>Light Bulb Form</h1>
+    </header>
+    <main>
+      <section>
+
+        <form class="" action="process.js" method="post">
+          <label for="username">Your name:</label>
+          <input type="text" name="username" value="" required>
+
+          <fieldset>
+            <legend>Select lightbulbs for your order:</legend>
+            <input type="checkbox" name="lightbulb[]" value="bundle1">Four 25-watt lightbulbs - $2.39<br>
+            <input type="checkbox" name="lightbulb[]" value="bundle2">Eight 25-watt lightbulbs - $4.29<br>
+            <input type="checkbox" name="lightbulb[]" value="bundle3">Four 25-watt long-life light bulbs - $3.95<br>
+            <input type="checkbox" name="lightbulb[]" value="bundle4">Eight 25-watt long-life light bulbs - $7.49<br>
+          </fieldset>
+
+          <fieldset>
+            <legend>Select lightbulbs for your order:</legend>
+            <input type="radio" name="card[]" value="visa">Visa<br>
+            <input type="radio" name="card[]" value="mastercard">Mastercard<br>
+            <input type="radio" name="card[]" value="discover">Discover<br>
+          </fieldset>
+
+          <button type="submit" name="reviewOrder">Review Order</button>
+
+
+        </form>
+      </section>
+      <!--
+      I was going to have a working form for this one but didn't have the time
+      to program it this week. Below you can see what I was going for.
+
+
+      <section>
+        <div class="orderCard">
+          <h1>Thank you <span id="userName"></span> for your order!</h1>
+          <h2>Your Order Number: <span id="orderNumber"></span></h2>
+          <h3>Order Summary</h3>
+          <div class="orderSummary">
+
+          </div>
+          <h3>Payment Method</h3>
+          <span id="paymentMethod"></span>
+          <br>
+          <h2>Order Total: $<span id="orderTotal"></span><h2>
+        </div>
+      </section> -->
+    </main>
+    <footer>
+      <p>&copy; 2021 Brandon LaDuke | Light Bulb Form</p>
+      <p>This page was created for partical fullfillment of CSC322 Web Programming</p>
+    </footer>
+  </body>
+</html>
