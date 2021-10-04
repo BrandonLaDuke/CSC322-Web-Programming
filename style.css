@@ -61,12 +61,14 @@ header h2 {
   display: grid;
   grid-template-columns: var(--body-columns);
   grid-template-areas: var(--body-direction);
+  grid-auto-rows: auto 1fr;
   gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 #about {
   grid-area:about;
+  font-size: 1.1rem;
 }
 #assignments {
   grid-area:assignments;
@@ -84,6 +86,12 @@ header h2 {
 }
 #preview > * {
   display: none; /* Working on a way to have previews. WIP. */
+}
+#preview > .show {
+  display: block;
+}
+#preview img {
+  width: 100%;
 }
 
 footer {
