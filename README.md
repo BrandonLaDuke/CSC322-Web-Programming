@@ -7,3 +7,7 @@ Repo of class projects and assignments for CSC322 at Sullivan University
   * [Light bulb Form](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week1/lightbulbform)
 * Week 2
   * [The State of Kentucky](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week2/state-of-ky)
+
+---
+
+*This repository was created for partical fullfillment of CSC322 Web Programming*

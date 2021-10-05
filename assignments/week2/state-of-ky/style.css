@@ -62,7 +62,9 @@ main {
   margin: auto;
 }
 
-/* START ASSIGNMENT BODY */
+
+/* START ASSIGNMENT BODY STYLES */
+
 .p1 {
   margin: inherit 20px;
   background-color: pink;
