@@ -1,0 +1,93 @@
+:root {
+  --primary-background-color: #fff;
+  --primary-text-color: #000;
+  --nav-background-color: #04a779;
+  --nav-link-color: #000;
+  --body-columns: 1fr;
+}
+
+html {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto auto 1fr auto;
+  font-family: monospace;
+}
+#linkBack {
+  text-align: center;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,12,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+#linkBack a {
+  display: block;
+  color: #fff;
+  margin: 1rem;
+}
+header {
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+nav {
+  background-color: var(--nav-background-color);
+  width: 100%;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--nav-link-color)
+}
+#body {
+  display: grid;
+  grid-template-columns: var(--body-columns);
+  grid-template-areas: var(--body-direction);
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+main {
+  display: grid;
+  gap:1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+/* START ASSIGNMENT BODY STYLES */
+
+ol {
+  list-style-type: upper-roman;
+}
+ol > ol {
+  list-style-type: upper-latin;
+}
+ol > ol > ol {
+  list-style-type: decimal;
+}
+#cars > ol:first-of-type {
+  background-color: pink;
+}
+#cars > ol:nth-of-type(2) {
+  background-color: blue; /* Just saying, this is bad a11y. */
+}
+#cars > ol:last-of-type {
+  background-color: red;
+}
+
+/* END ASSIGNMENT BODY STYLES */
+
+
+footer {
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  padding: 1rem;
+}
