@@ -8,6 +8,8 @@ Repo of class projects and assignments for CSC322 at Sullivan University
 * Week 2
   * [The State of Kentucky](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week2/state-of-ky)
   * [Car Lists](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week2/car-lists)
+* Week 3
+  * [Your First Bootstrap page](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week3/assn0301)
 ---
 
 *This repository was created for partical fullfillment of CSC322 Web Programming*
