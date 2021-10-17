@@ -1,0 +1,101 @@
+:root {
+  --primary-background-color: #000;
+  --primary-text-color: #fff;
+  --nav-background-color: #04a779;
+  --nav-link-color: #000;
+  --body-columns: 1fr;
+  --body-direction: "about" "assignments";
+}
+#preview {
+  display: none;
+}
+@media screen and (min-width:800px) {
+  :root {
+    --body-columns: 1fr 2fr;
+    --body-direction: "about about"
+                      "assignments preview";
+  }
+  #preview {
+    display: block;
+  }
+}
+html {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  font-family: monospace;
+}
+header {
+  width: 100%;
+  display: grid;
+  text-align: center;
+}
+nav {
+  background-color: var(--nav-background-color);
+  width: 100%;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 1rem;
+  font-size: 1.1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--nav-link-color)
+}
+header h1 {
+  margin-bottom: 0;
+  font-size: clamp(2.75rem, 5vw, 6rem);
+}
+header h2 {
+  margin-top: 0;
+  font-size: clamp(1rem, 1.4vw, 1.8rem);
+}
+#body {
+  display: grid;
+  grid-template-columns: var(--body-columns);
+  grid-template-areas: var(--body-direction);
+  grid-auto-rows: auto 1fr;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#about {
+  grid-area:about;
+  font-size: 1.1rem;
+}
+#assignments {
+  grid-area:assignments;
+  font-size: 1.1rem;
+}
+#assignments a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+#assignments a:hover {
+  color: lightgreen;
+}
+#preview {
+  grid-area: preview;
+}
+#preview > * {
+  display: none; /* Working on a way to have previews. WIP. */
+}
+#preview > .show {
+  display: block;
+}
+#preview img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--nav-background-color);
+  color: var(--nav-link-color);
+  padding: 1rem;
+}
