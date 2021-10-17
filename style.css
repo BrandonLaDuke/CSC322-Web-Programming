@@ -33,7 +33,6 @@ body {
 header {
   width: 100%;
   display: grid;
-  text-align: center;
 }
 nav {
   background-color: var(--nav-background-color);
@@ -56,42 +55,6 @@ header h1 {
 header h2 {
   margin-top: 0;
   font-size: clamp(1rem, 1.4vw, 1.8rem);
-}
-#body {
-  display: grid;
-  grid-template-columns: var(--body-columns);
-  grid-template-areas: var(--body-direction);
-  grid-auto-rows: auto 1fr;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-#about {
-  grid-area:about;
-  font-size: 1.1rem;
-}
-#assignments {
-  grid-area:assignments;
-  font-size: 1.1rem;
-}
-#assignments a {
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-#assignments a:hover {
-  color: lightgreen;
-}
-#preview {
-  grid-area: preview;
-}
-#preview > * {
-  display: none; /* Working on a way to have previews. WIP. */
-}
-#preview > .show {
-  display: block;
-}
-#preview img {
-  width: 100%;
 }
 
 footer {
