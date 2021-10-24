@@ -1,3 +1,12 @@
+/*
+  Filename: script.js
+  Author: Brandon LaDuke
+  Date: 10/24/2021
+
+  Supporting Files:
+  index.html
+  style.css
+*/
 // assignment 1.3
 function mouseOver1() {
   document.getElementById("a1-3").classList.add("show");
