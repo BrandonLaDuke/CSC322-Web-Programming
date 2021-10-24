@@ -1,64 +1,146 @@
 :root {
-  --primary-background-color: #000;
-  --primary-text-color: #fff;
-  --nav-background-color: #04a779;
-  --nav-link-color: #000;
-  --body-columns: 1fr;
-  --body-direction: "about" "assignments";
+  --color0: #ffffff;
+  --color1: #7400b8;
+  --color2: #6930C3;
+  --color3: #5E60CE;
+  --color4: #5390D9;
+  --color5: #4EA8DE;
+  --color6: #48BFE3;
+  --color7: #56CFE1;
+  --color8: #64DFDF;
+  --color9: #72EFDD;
+  --color10: #80FFDB;
+  --color11: #f72585;
+  --gradient: linear-gradient(270deg, #7400b8ff, #6930c3ff, #5e60ceff, #5390d9ff, #4ea8deff, #48bfe3ff, #56cfe1ff, #64dfdfff, #72efddff, #80ffdbff);
+  --primary-background-color: var(--color10);
+  --primary-text-color: var(--color11);
+  --body-direction: "about about"
+                    "assignments preview";
 }
-#preview {
-  display: none;
-}
-@media screen and (min-width:800px) {
-  :root {
-    --body-columns: 1fr 2fr;
-    --body-direction: "about about"
-                      "assignments preview";
-  }
-  #preview {
-    display: block;
-  }
-}
+
 html {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
+}
+a {
+  color: var(--color2);
 }
 body {
   margin: 0;
   min-height: 100vh;
   display: grid;
-  grid-auto-rows: auto 1fr auto;
-  font-family: monospace;
+  gap:1rem;
+  grid-auto-rows: auto auto 1fr auto;
+  font-family: sans-serif;
+}
+.beta {
+  background-color: #000;
+  color: #0f0;
+  font-size: .9rem;
+  padding: 1rem;
 }
 header {
   width: 100%;
   display: grid;
 }
-nav {
-  background-color: var(--nav-background-color);
-  width: 100%;
+
+.intro {
+  background-image: var(--gradient);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 1rem 0;
+}
+.intro #Logo {
+  grid-column: 3 / 4;
+  width: 50%;
+  margin: auto auto auto 0;
+}
+.intro div {
+  color: #000;
+  background-color: var(--leaf-green);
+  grid-column: 5 / 7;
+  margin: 5rem 0;
+}
+.intro h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+.intro h2 {
+  margin-top: 0;
+  font-size: 1.13rem;
+}
+.intro ul {
+  list-style-type: none;
+  padding: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-auto-rows: auto auto;
+  gap:1rem;
+  margin: auto;
+  max-width: 1400px;
+}
+main > * {
+  border: .1rem solid var(--color8);
+  background-color: var(--color9);
+  padding: 1rem;
+}
+main > section > h2 {
   margin: 0;
 }
-nav ul li {
-  display: inline;
-  margin: 1rem;
-  font-size: 1.1rem;
+.about {
+  grid-row: 1 /1;
+  grid-column: 1 / 1;
 }
-nav ul li a {
+.about p {
+  color: #000;
+  font-size: 1.2rem;
+}
+.assignments {
+  position: relative;
+  padding-top:3rem;
+  grid-row: 2 / 2;
+  grid-column: 1 / 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.assignments > h2 {
+  display: block;
+  position: absolute;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.assignments > div {
+  background-color: var(--color7);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.assignments > div > a {
   text-decoration: none;
-  color: var(--nav-link-color)
+  background-color: var(--color1);
+  color: var(--color0);
+  text-align: center;
+  padding: .5rem;
+  border-radius: 50px;
+  margin-top: 1rem;
 }
-header h1 {
-  margin-bottom: 0;
-  font-size: clamp(2.75rem, 5vw, 6rem);
+.assignments > div > h3 {
+  margin: 0;
 }
-header h2 {
-  margin-top: 0;
-  font-size: clamp(1rem, 1.4vw, 1.8rem);
+.inspire {
+  grid-row: 1 / 3;
+  grid-column: 2 / 2;
 }
 
+
 footer {
-  background-color: var(--nav-background-color);
+  background-color: var(--leaf-green);
   color: var(--nav-link-color);
   padding: 1rem;
 }
