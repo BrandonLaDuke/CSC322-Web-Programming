@@ -24,7 +24,7 @@ html {
 }
 a {
   color: var(--color2);
-}
+} 
 body {
   margin: 0;
   min-height: 100vh;
