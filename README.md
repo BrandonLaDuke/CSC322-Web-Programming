@@ -12,6 +12,11 @@ Repo of class projects and assignments for CSC322 at Sullivan University
   * [Your First Bootstrap page](https://github.com/BrandonLaDuke/CSC322-Web-Programming/tree/main/assignments/week3/assn0301)
 * Week 4
   * [Publish Your Site](https://brandonladuke.github.io/CSC322-Web-Programming/)
+* Week 5
+  * [Powers.js](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week4/ex0401/ex0401.html)
+  * [Maximum.js](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week4/ex0403/ex0403.html)
+  * [E_Names.js](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week4/ex0409/ex0409.html)
+  * [Tst_Names](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week4/ex0412/ex0412.html)
 ---
 
 *This repository was created for partical fullfillment of CSC322 Web Programming*
