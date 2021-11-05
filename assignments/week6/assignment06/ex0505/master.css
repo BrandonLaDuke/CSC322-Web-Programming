@@ -1,0 +1,11 @@
+label, button {
+  display: block;
+  margin: 1rem 0 .2rem;
+}
+.hidden {
+  display: none;
+}
+.error {
+  background-color: red;
+  color: white;
+}
