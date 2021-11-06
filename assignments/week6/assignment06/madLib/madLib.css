@@ -1,0 +1,7 @@
+.hidden {
+  display: none;
+}
+#madLibComplete > p span {
+  font-weight: bold;
+  color: red;
+}
