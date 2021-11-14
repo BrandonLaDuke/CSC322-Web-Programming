@@ -60,7 +60,11 @@ main {
   gap:1rem;
   max-width: 1000px;
   margin: auto;
-  grid-template-columns: 1fr 1fr;
+}
+@media (min-width:800px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 footer {
   background-color: var(--nav-background-color);
