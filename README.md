@@ -22,6 +22,7 @@ Repo of class projects and assignments for CSC322 at Sullivan University
   * [MadLib](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week6/assignment06/madLib/madLib.html)
 * Week 7
   * [Doctor Strange 2: Countdown Timer](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week7/assignment07/countdown/index.html)
+  * [Rock Paper Scissors](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week7/assignment07/rps/index.html)
 ---
 
 *This repository was created for partical fullfillment of CSC322 Web Programming*
