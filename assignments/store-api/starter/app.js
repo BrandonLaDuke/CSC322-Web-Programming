@@ -42,5 +42,3 @@ const start = async () => {
 }
 
 start();
-
-// pass: y7quZB7eEaKuZEM
