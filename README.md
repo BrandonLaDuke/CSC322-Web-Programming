@@ -25,6 +25,8 @@ Repo of class projects and assignments for CSC322 at Sullivan University
   * [Rock Paper Scissors](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/week7/assignment07/rps/index.html)
 * Week 8
   * [Store API](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/store-api/starter)
+* Week 9
+  * [React Slider](https://brandonladuke.github.io/CSC322-Web-Programming/assignments/react-slider)
 ---
 
 *This repository was created for partical fullfillment of CSC322 Web Programming*
